@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.havoc.support.preferences;
+package com.zenx.support.preferences;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import com.havoc.support.R;
+import com.zenx.support.R;
 
 public class PreferenceCategory extends androidx.preference.PreferenceCategory {
 
