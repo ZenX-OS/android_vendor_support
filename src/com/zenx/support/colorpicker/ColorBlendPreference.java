@@ -31,7 +31,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import com.zenx.support.colorpicker.ColorPickerDialog;
 
-import com.android.internal.util.zenx.Utils;
+import com.android.internal.util.zenx.ZenxUtils;
 
 import com.zenx.support.R;
 
@@ -313,7 +313,7 @@ public class ColorBlendPreference extends Preference
     private void updateDialogSliderPreview() {
         int currentPreview = mDialogColorPreviewSlider.getProgress();
         mDialogPreviewColorBetween.setBackgroundColor(
-                Utils.getBlendColorForPercent(mPreviewColorEnd, mPreviewColorStart,
+                ZenxUtils.getBlendColorForPercent(mPreviewColorEnd, mPreviewColorStart,
                         mPreviewBlendReverse, currentPreview));
         mDialogColorPreviewText.setText(
                 getContext().getString(R.string.color_blend_preview, currentPreview));
@@ -373,7 +373,7 @@ public class ColorBlendPreference extends Preference
         }
         if (mViewColorBetween != null) {
             mViewColorBetween.setBackgroundColor(
-                    Utils.getBlendColorForPercent(mColorEnd, mColorStart, mBlendReverse, 50));
+                    ZenxUtils.getBlendColorForPercent(mColorEnd, mColorStart, mBlendReverse, 50));
         }
     }
 
